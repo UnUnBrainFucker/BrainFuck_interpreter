@@ -66,7 +66,8 @@ def interpret(code, input_data=''):
 if __name__ == '__main__':
     if len(sys.argv) < 2:
         print('Usage: python brainfuck_interpreter.py <file>')
-        sys.exit(1)
+        if len(sys.argv) < 2:
+            raise ValueError('Please provide a file as an argument.')
 
     with open(sys.argv[1], 'r') as f:
         code = f.read()

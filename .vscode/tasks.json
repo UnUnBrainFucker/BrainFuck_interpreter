@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run BrainFuck Interpreter",
+            "type": "shell",
+            "command": "python3",
+            "args": [
+                "${workspaceFolder}/brainfuck_interpreter.py",
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

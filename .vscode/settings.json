@@ -1,0 +1,6 @@
+{
+    "[brainfuck]": {
+        "editor.defaultFormatter": null,
+        "launch.configurations": ["Brainfuck"]
+    }
+}
